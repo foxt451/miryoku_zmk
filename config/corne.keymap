@@ -4,3 +4,14 @@
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/42/corne.h"
 #include "../miryoku/miryoku.dtsi"
+/ {
+  combos {
+    compatible = "zmk,combos";
+    tmux_prefix {
+      timeout-ms = <40>;
+      key-positions = <3 15>;
+      bindings = <&kp LC(A)>;
+      layers = <U_BASE>;
+    };
+  };
+};
